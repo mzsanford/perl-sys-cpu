@@ -1,0 +1,8 @@
+CPU.pm
+CPU.xs
+Changes
+MANIFEST
+Makefile.PL
+t/Sys-CPU.t
+README
+META.yml                                 Module meta-data (added by MakeMaker)
