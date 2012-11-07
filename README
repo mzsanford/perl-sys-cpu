@@ -70,8 +70,11 @@ Revision history for Perl extension Sys::CPU.
         - Fixed Darwin/Mac Os support (Marc Koderer)
 
 0.51
-	- Fixed hidden mac os files
+        - Fixed hidden mac os files
 
 0.52
-	- fixed bug 50933 and 25253
-        - Added licence info (Fedora bug 585336)
+        - fixed bug 50933 and 25253
+        - Added license info (Fedora bug 585336)
+
+0.53
+        - fixed bug in s390 CPU detection
