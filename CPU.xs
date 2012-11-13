@@ -269,7 +269,7 @@ int proc_cpuinfo_clock (void) {
     return (0);
 }
 
-#ifdef __s390__ || __s390x__
+#if defined __s390__ || defined __s390x__
 
 /* Return machine value from s390 processor line, NULL if not found */
 char *processor_machine_field (char *processor) {
@@ -372,7 +372,7 @@ CODE:
     char *value = NULL;
     int retcode = 0;
 #ifdef __linux__
-#ifdef __s390__ || __s390x__
+#if defined __s390__ || defined __s390x__
     value = processor_machine_field (proc_cpuinfo_field ("processor") );
 #endif
     if (!value) value = proc_cpuinfo_field ("model name");
