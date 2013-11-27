@@ -19,7 +19,7 @@ our %EXPORT_TAGS = ( 'all' => [ qw(
 
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
-our $VERSION = '0.54';
+our $VERSION = '0.60';
 
 bootstrap Sys::CPU $VERSION;
 
@@ -49,6 +49,8 @@ system. Support has now also been added for type of CPU and clock speed. While m
 code is from UNIX::Processors, win32 support has been added (but not tested).
 
 v0.45 - Corrected solaris support (Thanks Cloyce)
+
+v0.60 - Added FreeBSD support (Thanks Johan & SREZIC)
 
 =head2 EXPORT
 
